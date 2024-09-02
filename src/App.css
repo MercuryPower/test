@@ -1,0 +1,25 @@
+
+#navbar_company-name{
+  font-family: Le Murmure, sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 50px;
+  color:#FFFFFF;
+  text-align: left;
+}
+.navbar{
+  display: flex;
+  height: 37px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-top: 53px;
+}
+.navbar_menu-item{
+  margin-left:133px;
+}
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+}
