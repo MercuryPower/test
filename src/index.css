@@ -11,9 +11,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 body {
+  padding:3em;
   margin: 0;
   background-color: #AE97E8;
   color:#FFFFFF;
@@ -22,8 +21,17 @@ body {
 text{
   font-size: 18px;
 }
-
-
+h2{
+  font-size:28px;
+  margin: 0;
+}
+h1{
+  font-size:60px;
+  margin: 0;
+}
+h4{
+  margin: 0;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

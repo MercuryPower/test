@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <header>
             <nav className={'navbar'}>
-                <ul className={'menu'}>
+                <ul className={'navbar_menu'}>
                     <li>
                         <a href={'/'}>
                             <h1 className={'navbar_company-name'}>Elfen lied</h1>

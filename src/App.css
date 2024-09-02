@@ -1,7 +1,7 @@
 
 .navbar_company-name{
   font-family: Le Murmure, sans-serif;
-  font-size: 2.813rem;
+  font-size: 45px;
   line-height: 50px;
   text-align: left;
   color:#FFFFFF;
@@ -17,14 +17,10 @@ a {
   color:#FFFFFF;
   text-decoration: none;
 }
-.navbar{
-  padding-left:60px;
-  padding-top:53px;
-  padding-right:124px;
+.navbar_menu-item__catalog{
+  gap: 12px;
 }
-.navbar_menu-item__catalog,
-.navbar_menu-item__search
-{
+.navbar_menu-item__search {
   gap: 12px;
 }
 .navbar_menu-item__info{
@@ -41,17 +37,134 @@ a {
 .navbar_menu-item div{
   display: flex;
 }
-.menu{
-  display: flex;
+.navbar_menu{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.5fr 1fr 1fr 0.75fr 0.5fr;
   height: 36px;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 }
-ul.menu{
+ul.navbar_menu{
   padding: 0;
+
   margin:0;
   list-style: none;
 }
-li.menu{
+li.navbar_menu{
   text-decoration: none;
+  height: 36px;
+}
+
+.today-product{
+  margin-bottom:140px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: left;
+  color:#D9FF5A;
+}
+.main-content{
+  width: 1240px;
+  height: 1058px;
+}
+.today-product_background{
+  position: absolute;
+  display: flex;
+  margin-top:5rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.today-product-container{
+  display: flex;
+  margin-top:300px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-content__lamp{
+  display: flex;
+  left:31.5%;
+  top:17%;
+  transform: translateX(-50%);
+  position: absolute;
+  justify-content: center;
+}
+.today-product-description{
+  margin-top:240px;
+  padding-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: left;
+}
+.today-product-description p{
+  width: 310px;
+}
+.today-product-name{
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+}
+.today-product-price {
+  display: flex;
+  width: 274px;
+  padding-top: 28px;
+  border-top: 1px solid #FFFFFF33;
+}
+.main-content_today-product-price__ruble-sign{
+  font-size: 20px;
+  vertical-align: 14px;
+  margin-left: 7px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+
+}
+.today-product-price h4{
+  margin: 0;
+  font-family: Floreste, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color:#D9FF5A
+}
+.today-product_buy{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 85%;
+  left: 40%;
+  width: 357px;
+  height: 156px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  gap: 11px;
+  outline: none;
+  background: transparent;
+  border:0;
+  cursor: pointer;
+  font-family: 'Euclid Circular A', sans-serif;
+  color: #FFFFFF;
+}
+.today-product_buy-button-container{
+  display: flex;
+  justify-content: end;
+}
+.next-slide-product-container img{
+  position: absolute;
+  top: 0;
+  right: 20em;
+  z-index: 99;
 }
