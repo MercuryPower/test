@@ -1,25 +1,57 @@
 
-#navbar_company-name{
+.navbar_company-name{
   font-family: Le Murmure, sans-serif;
-  font-size: 45px;
-  font-weight: 600;
+  font-size: 2.813rem;
   line-height: 50px;
-  color:#FFFFFF;
   text-align: left;
-}
-.navbar{
-  display: flex;
-  height: 37px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 60px;
-  margin-top: 53px;
+  color:#FFFFFF;
 }
 .navbar_menu-item{
-  margin-left:133px;
+  display: flex;
+  gap: 0.625rem;
 }
-a:active,
+.navbar_menu-item a:active,
 a:hover,
 a {
+  display: flex;
+  color:#FFFFFF;
+  text-decoration: none;
+}
+.navbar{
+  padding-left:60px;
+  padding-top:53px;
+  padding-right:124px;
+}
+.navbar_menu-item__catalog,
+.navbar_menu-item__search
+{
+  gap: 12px;
+}
+.navbar_menu-item__info{
+  gap:30px;
+}
+.navbar_menu-item__user-options{
+  gap:36px;
+}
+.navbar_menu-item h2{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+.navbar_menu-item div{
+  display: flex;
+}
+.menu{
+  display: flex;
+  height: 36px;
+  align-items: center;
+  justify-content: space-between;
+}
+ul.menu{
+  padding: 0;
+  margin:0;
+  list-style: none;
+}
+li.menu{
   text-decoration: none;
 }
