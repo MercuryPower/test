@@ -1,4 +1,7 @@
-
+.navbar{
+  position: sticky;
+  z-index: 99;
+}
 .navbar_company-name{
   font-family: Le Murmure, sans-serif;
   font-size: 45px;
@@ -21,6 +24,7 @@ a {
   gap: 12px;
 }
 .navbar_menu-item__search {
+  margin-left:50px;
   gap: 12px;
 }
 .navbar_menu-item__info{
@@ -28,6 +32,7 @@ a {
 }
 .navbar_menu-item__user-options{
   gap:36px;
+  margin-right: 50px;
 }
 .navbar_menu-item h2{
   font-weight: 500;
@@ -38,9 +43,7 @@ a {
   display: flex;
 }
 .navbar_menu{
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 0.5fr 1fr 1fr 0.75fr 0.5fr;
+  display: flex;
   height: 36px;
   align-items: center;
   justify-content: space-between;
@@ -73,7 +76,7 @@ li.navbar_menu{
 .today-product_background{
   position: absolute;
   display: flex;
-  margin-top:5rem;
+  margin-top:5em;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -139,12 +142,9 @@ li.navbar_menu{
   color:#D9FF5A
 }
 .today-product_buy{
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 85%;
-  left: 40%;
   width: 357px;
   height: 156px;
   font-size: 20px;
@@ -162,9 +162,50 @@ li.navbar_menu{
   display: flex;
   justify-content: end;
 }
-.next-slide-product-container img{
+.today-product-blocks{
+  align-items: end;
+  gap: 411px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.today-product-group{
+  display: flex;
+  flex-direction: column;
+}
+.next-slide-product-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.next-next-slide-product-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.next-slide-product-container{
   position: absolute;
   top: 0;
-  right: 20em;
-  z-index: 99;
+  right: 380px;
+}
+.next-slide-product-background{
+  position: absolute;
+  top: 0;
+  right: 380px;
+}
+.next-slide-product-container{
+  z-index: 1;
+  gap: 20px;
+}
+.today-product-group{
+  display: flex;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  rotate: 5deg;
+  justify-content: center;
 }
