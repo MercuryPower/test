@@ -1,4 +1,7 @@
 .navbar{
+  padding-top:3em;
+  margin-right:3em;
+  margin-left:3em;
   position: sticky;
   z-index: 99;
 }
@@ -70,6 +73,8 @@ li.navbar_menu{
   color:#D9FF5A;
 }
 .main-content{
+  margin-left: 3rem;
+  margin-right:3rem;
   width: 1240px;
   height: 1058px;
 }
@@ -90,8 +95,8 @@ li.navbar_menu{
 }
 .main-content__lamp{
   display: flex;
-  left:31.5%;
-  top:17%;
+  left:33em;
+  top:9rem;
   transform: translateX(-50%);
   position: absolute;
   justify-content: center;
@@ -208,4 +213,46 @@ li.navbar_menu{
   align-items: center;
   rotate: 5deg;
   justify-content: center;
+}
+.button {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: transparent;
+  top:415px;
+  right:142px;
+} .button:hover{
+  opacity: 85%;
+  transition: ease-in-out;
+  }
+.circle {
+  width: 101px;
+  position: absolute;
+  height: 101px;
+  background-color:transparent;
+  border:2px solid #D9FF5A;
+  border-radius: 50%;
+}
+.circle2{
+  width: 81px;
+  left: 15px;
+  top:153px;
+  position: relative;
+  height: 72px;
+  background-color:#FA8FEF;
+  border-radius: 50%;
+  transform:rotate(-23deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.category-cards{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  border: none;
+  margin: 0;
+  border-bottom: 2px solid #CBB6FF;
+  width: 63px;
 }

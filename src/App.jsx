@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from "@components/ui/Card.jsx";
 
 function App() {
 
@@ -73,9 +74,39 @@ function App() {
                 </section>
                 <section>
                     <div className={'category-content'}>
-                        <h1 style={{textTransform:'uppercase', textAlign:'center'}}>Категории</h1>
+                        <h1 style={{textTransform:'uppercase', textAlign:'center', fontWeight:500}}>Категории</h1>
+                        <div className={'category-cards'}>
+                            <Card />
+                            <Card />
+                            <Card />
+                            <Card />
+                        </div>
                     </div>
                 </section>
+                <div style={{marginTop:'575px'}}>
+                    <img style={{width:'100%', position:'relative', zIndex:3}} src={'line.png'} alt={'line'} />
+                    <img style={{width:'100%', position:'relative', bottom:'220px'}} src={'line2.png'} alt={'line2'}/>
+                </div>
+                <section style={{height:'100vh'}}>
+                    <div style={{display:'flex', justifyContent:'space-between', marginLeft:'3em', marginRight:'3em'}}>
+                        <div style={{display:'flex', gap:'45px'}}>
+                            <img src={'paginator.svg'} alt={'paginatorIcon'}/>
+                            <h1 style={{textTransform:'uppercase', textAlign:'center', fontWeight:500}}>Блог</h1>
+                        </div>
+                        <div style={{display:'flex', justifyContent:'center',alignItems:'center'}}>
+                            <p style={{margin:0,textTransform:'uppercase', textAlign:'center', fontSize:'40px', fontFamily:'Floreste', fontWeight:400, marginRight:'27px'}}>02</p>
+                            <hr className={'line'}/>
+                            <p style={{margin:0,textTransform:'uppercase', textAlign:'center', fontSize:'40px', fontFamily:'Floreste', fontWeight:400,marginLeft:'35px'}}>04</p>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <div style={{display:'flex', justifyContent:'space-between', marginLeft:'3rem', marginRight:"3rem",height:'129px'}}>
+                        <p>@2023</p>
+                        <p>Все права защищены</p>
+                    </div>
+
+                </footer>
             </article>
         </main>
     </>
