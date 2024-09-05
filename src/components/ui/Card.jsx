@@ -6,7 +6,7 @@ const Card = () => {
             <h1 style={{textTransform:'uppercase', textWrap:'wrap', fontSize:'28px', lineHeight:'36px', textAlign:'left', height:'auto', zIndex:2, fontWeight:500, marginTop:'35px'}}>Напольные <br/> Зеркала</h1>
             <img style={{position:'absolute'}} src={'Subtract.png'} alt={'cardBg'} />
             <div>
-                <img style={{position:'relative', top:'220px',right:'170px'}} src={'madedWord.png'} />
+                <img style={{position:'relative', top:'220px',right:'170px'}} src={'madedWord.png'}  alt={'word'}/>
             </div>
             <div>
                 <button className={'button'}>

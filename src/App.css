@@ -242,12 +242,27 @@ li.navbar_menu{
   background-color:#FA8FEF;
   border-radius: 50%;
   transform:rotate(-23deg);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.circle3{
+  width: 96px;
+  left: 5.5rem;
+  top:12rem;
+  position: relative;
+  height: 81px;
+  background-color:#CBB6FF;
+  border-radius: 50%;
+  border:2px solid #D9FF5A;
+  transform:rotate(-15deg);
 }
 .category-cards{
   display: flex;
   gap: 50px;
   justify-content: center;
+  align-items: center;
+}
+.blog-cards{
+  display: flex;
+  gap: 20rem;
   align-items: center;
 }
 .line{

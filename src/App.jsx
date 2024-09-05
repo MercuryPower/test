@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Card from "@components/ui/Card.jsx";
+import BlogCard from "@components/ui/BlogCard.jsx";
 
 function App() {
 
@@ -87,8 +88,8 @@ function App() {
                     <img style={{width:'100%', position:'relative', zIndex:3}} src={'line.png'} alt={'line'} />
                     <img style={{width:'100%', position:'relative', bottom:'220px'}} src={'line2.png'} alt={'line2'}/>
                 </div>
-                <section style={{height:'100vh'}}>
-                    <div style={{display:'flex', justifyContent:'space-between', marginLeft:'3em', marginRight:'3em'}}>
+                <section style={{height:'100vh',marginLeft:'3em', marginRight:'3em'}}>
+                    <div style={{display:'flex', justifyContent:'space-between'}}>
                         <div style={{display:'flex', gap:'45px'}}>
                             <img src={'paginator.svg'} alt={'paginatorIcon'}/>
                             <h1 style={{textTransform:'uppercase', textAlign:'center', fontWeight:500}}>Блог</h1>
@@ -99,13 +100,17 @@ function App() {
                             <p style={{margin:0,textTransform:'uppercase', textAlign:'center', fontSize:'40px', fontFamily:'Floreste', fontWeight:400,marginLeft:'35px'}}>04</p>
                         </div>
                     </div>
+                    <div className={'blog-cards'} >
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                    </div>
                 </section>
                 <footer>
                     <div style={{display:'flex', justifyContent:'space-between', marginLeft:'3rem', marginRight:"3rem",height:'129px'}}>
                         <p>@2023</p>
                         <p>Все права защищены</p>
                     </div>
-
                 </footer>
             </article>
         </main>
